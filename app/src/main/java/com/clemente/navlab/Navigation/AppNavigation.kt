@@ -6,6 +6,10 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.clemente.navlab.Screens.DetailScreen
+import com.clemente.navlab.Screens.HomeScreen
+import com.clemente.navlab.Screens.ListScreen
+import com.clemente.navlab.Screens.ProfileScreen
 
 
 @Composable
