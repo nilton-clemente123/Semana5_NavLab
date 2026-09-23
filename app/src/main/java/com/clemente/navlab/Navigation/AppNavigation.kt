@@ -9,6 +9,7 @@ import androidx.navigation.navArgument
 import com.clemente.navlab.Screens.DetailScreen
 import com.clemente.navlab.Screens.HomeScreen
 import com.clemente.navlab.Screens.ListScreen
+import com.clemente.navlab.Screens.LoginScreen
 import com.clemente.navlab.Screens.ProfileScreen
 
 
@@ -19,8 +20,12 @@ fun AppNavigation() {
 
     NavHost(
         navController = navController,
-        startDestination = Screen.Home.route
+        startDestination = Screen.Login.route
     ) {
+
+        composable(Screen.Login.route) {
+            LoginScreen(navController)
+        }
 
         composable(Screen.Home.route) {
             HomeScreen(navController)
